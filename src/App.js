@@ -14,7 +14,9 @@ import './App.css';
 // import DataFetchingOne from './Comp/DataFetchingOne';
 // import Counter from './Comp/Counter';
 // import HookCounter from './Comp/HookCounter';
-import DataFetchingOne from './Comp/DataFetchingOne';
+import DataFetchingOne from './components/DataFetchingOne';
+import Home from './containers/Home/index'
+
 export const UserContext =React.createContext()
 export const ChannelContext=React.createContext()
 
@@ -24,7 +26,7 @@ function App() {
   return (
     <div className="App">
 
-<DataFetchingOne />
+<Home />
 
 {/* 
 <HookCounter /> */}
