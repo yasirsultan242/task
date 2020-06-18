@@ -15,38 +15,35 @@ import './App.css';
 // import Counter from './Comp/Counter';
 // import HookCounter from './Comp/HookCounter';
 import DataFetchingOne from './components/DataFetchingOne';
-import Home from './containers/Home/index'
+import Home from './containers/Home/index';
+import Header from './components/header';
+import NewFileData from './components/NewFileData';
 
-export const UserContext =React.createContext()
-export const ChannelContext=React.createContext()
-
-
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
+      {/* <Header /> */}
+      <NewFileData />
 
-<Home />
-
-{/* 
+      {/* 
 <HookCounter /> */}
-{/* <Counter /> */}
-{/* <DataFetchingOne /> */}
-{/* <Reducer /> */}
+      {/* <Counter /> */}
+      {/* <DataFetchingOne /> */}
+      {/* <Reducer /> */}
 
-
- {/* <UserContext.Provider value={'sultan'}>
+      {/* <UserContext.Provider value={'sultan'}>
    <ChannelContext.Provider value={'helloS'}>
    <ComponentC />
    </ChannelContext.Provider>
   
    
    </UserContext.Provider>   */}
-
-   </div>
-     );
-
-    }
+    </div>
+  );
+}
 // <DataFetching />
 
 // {/* <HookIntervalCounter /> */}
@@ -55,10 +52,6 @@ function App() {
 // {/* <HookCounterThree /> */}
 // {/* <HookCounterFour /> */}
 
-
 //    {/* <Hook /> */}
- 
-
-
 
 export default App;
